@@ -230,7 +230,7 @@ NETWORK
               <ul>
                 <li>is a <strong>javascript file</strong> that you write and can be 'installed' onto your website</li>
                 <li>lets you to <strong>do things with requests</strong> between browser and server</li>
-                <li>has special caches that you can <strong>reliably store content</strong></li>
+                <li>has special caches that you can <strong>reliably store content</strong> in</li>
               </ul>
             </section>
 
@@ -243,7 +243,7 @@ this.oninstalled = function(event) {
   var myCache = new Cache(
     '/lib/fonts/BentonSansBold.ttf',
     '/lib/img/startupscreen/splash-logo.png'
-  ));
+  );
 
   // The coast is only clear when all the resources are ready.
   event.waitUntil(myCache.ready());
@@ -268,7 +268,7 @@ this.addEventListener("fetch", function(e) {
             <section>
               <h2 style="font-size:150%">Unlike native apps,<br />offline websites only download updates</h2>
               <h1>when they're open</h1>
-              <h2 style="font-size:150%">and only applies those updates on refresh</h2>
+              <h2 style="font-size:150%">and only apply those updates on refresh</h2>
               <aside class='notes'>And some users get stuck on old versions - we're still detecting API calls<br />from Javascript that hasn't been served for a year</aside>
             </section>
 
